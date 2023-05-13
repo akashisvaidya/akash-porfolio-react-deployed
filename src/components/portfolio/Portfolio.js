@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   TabContainer,
   TabContent,
@@ -6,6 +7,8 @@ import {
   NavItem,
   NavLink,
   Tab,
+  OverlayTrigger,
+  Tooltip,
 } from "react-bootstrap";
 import { FinishedProjects } from "./FinishedProjects";
 import { OngoingProjects } from "./OngoingProjects";
@@ -16,9 +19,19 @@ export const Portfolio = () => {
       <TabContainer defaultActiveKey="ongoing">
         <Nav variant="tabs" className="justify-content-center">
           <NavItem>
-            <NavLink eventKey="finished" className="text-success fw-bold">
-              Finished Projects
-            </NavLink>
+            <OverlayTrigger
+              key="top"
+              placement="top"
+              overlay={
+                <Tooltip id="tooltip-finished-projects">
+                  See more of my finished projects on GitHub
+                </Tooltip>
+              }
+            >
+              <NavLink eventKey="finished" className="text-success fw-bold">
+                Finished Projects
+              </NavLink>
+            </OverlayTrigger>
           </NavItem>
           <NavItem>
             <NavLink eventKey="ongoing" className="text-success fw-bold">

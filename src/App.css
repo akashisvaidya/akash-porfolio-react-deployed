@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 /* the color palette used for the website */
 /* https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8 */
 
@@ -83,4 +86,11 @@
   }
 }
 
-/*  */
+/*css for titles */
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  /* letter-spacing: 0.3rem; */
+  margin-bottom: 4rem;
+}
