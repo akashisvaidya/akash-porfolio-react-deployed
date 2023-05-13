@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { FinishedProjects } from "./FinishedProjects";
 import { OngoingProjects } from "./OngoingProjects";
+import { CollabProjects } from "./CollabProjects";
 export const Portfolio = () => {
   return (
     <div id="projects">
@@ -38,7 +39,9 @@ export const Portfolio = () => {
             {/* content for finished projects tab */}
             <FinishedProjects />
           </Tab.Pane>
-          <Tab.Pane eventKey="collaborate">{/* <CollabProjects /> */}</Tab.Pane>
+          <Tab.Pane eventKey="collaborate">
+            <CollabProjects />
+          </Tab.Pane>
         </TabContent>
       </TabContainer>
     </div>

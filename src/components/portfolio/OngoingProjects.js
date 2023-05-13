@@ -21,7 +21,15 @@ export const OngoingProjects = () => {
       <h2 className="text-center mb-5">Projects I am currently working on.</h2>
       <div className="row">
         {data.map(({ image, title, desc, github, demo }) => {
-          return <Projects />;
+          return (
+            <Projects
+              image={image}
+              title={title}
+              desc={desc}
+              git={github}
+              demo={demo}
+            />
+          );
         })}
       </div>
     </div>
