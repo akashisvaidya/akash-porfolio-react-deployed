@@ -4,6 +4,8 @@ import { NavBar } from "./components/NavBar";
 
 import { Portfolio } from "../src/components/portfolio/Portfolio";
 import { About } from "./components/About";
+import { Footer } from "./components/Footer";
+import { ContactForm } from "./components/Contact";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <HeroSection />
       <Portfolio />
       <About />
+      <ContactForm />
+      <Footer />
     </>
   );
 }
