@@ -22,7 +22,7 @@ export const CollabProjects = () => {
     {
       id: 2,
       image: img2,
-      title: "#PokemonHub",
+      title: "PokemonHub",
       desc: `I'm working on a Pokémon application using the Pokémon API,
                   and I'm looking to improve its CSS and add more features. Feel
                   free to check it out on GitHub, and if you're interested in
@@ -35,7 +35,7 @@ export const CollabProjects = () => {
     {
       id: 3,
       image: img3,
-      title: "#Bring_Your_Own_Ideas",
+      title: "Bring_Your_Own_Ideas",
       desc: `Open to collaborating on projects aligned with my interests.
                   Let's learn and have fun together. Feel free to reach out with
                   your ideas!"`,
