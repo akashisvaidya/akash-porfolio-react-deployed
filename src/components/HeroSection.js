@@ -39,7 +39,7 @@ export const HeroSection = () => {
               to learn more and enhance{" "}
               <span className="fw-bold color-green">skills</span>.
             </p>
-            <button class="download-button disable">
+            <button class="download-button disabled">
               <div class="docs">
                 <svg
                   class="css-i6dzq1"
